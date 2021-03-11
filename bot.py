@@ -33,7 +33,7 @@ def bot():
     elif '1' in incoming_msg and level == 2:
         # return a quote
         reply = 'Enter the quantity in numbers'
-        level = 4
+        level = 0
     #    thisdict.update({"Whole Chicken Meat": ["0","0"]})
         msg.body(reply)
         responded = True
@@ -50,6 +50,8 @@ def bot():
     elif not responded :
         reply = 'select the right option from above'
         msg.body(reply)
+        #level = 0
+
     return str(resp)
 
 
